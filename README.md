@@ -115,3 +115,47 @@
 | **DISK**    | 7TB (RAID1)      |
 | **Network** | 100Mbps          |
 
+## 📝️ API 명세서
+
+### GET API Endpoints
+| Method | URI                               | Description |
+|--------|-----------------------------------|-------------|
+| GET    | `/api/members/me`                 | 프로필 조회      |
+| GET    | `/api/reviews/{productId}`        | 리뷰 조회(상품별)  |
+| GET    | `/api/reviews/members`            | 리뷰 조회(회원별)  |
+| GET    | `/api/reviews/sorted/{productId}` | 리뷰 정렬       |
+| GET    | `/api/cosmetics`                  | 화장품 목록 요청   |
+| GET    | `/api/files`                      | 파일 조회       |
+| GET    | `/api/admin/users`                | 회원 목록 조회    |
+| GET    | `/api/category`                   | 전체 카테고리 조회  |
+| GET    | `/api/apk`                        | 앱 다운로드      |
+| GET    | `/api/oauth/kakao/callback`       | 로그인         |
+| GET    | `/api/logout-kakao`               | 로그아웃        |
+| GET    | `/api/self`                       | 자기진단 조회     |
+| GET    | `/api/cosmetics/personal/results` | 개인별 진단결과 조회 |
+|        |                                   |             |
+### POST API Endpoints
+
+| Method | URI                   | Description |
+|--------|-----------------------|-------------|
+| POST   | `/api/reviews`        | 리뷰 등록       |
+| POST   | `/api/admin/login`    | 관리자 로그인     |
+| POST   | `/api/admin/category` | 카테고리 추가     |
+| POST   | `/api/skin/diagnosis` | 피부 진단       |
+| POST   | `/api/admin/restudy`  | 재학습         |
+
+### PUT API Endpoints
+
+| Method | URI                       | Description |
+|--------|---------------------------|-------------|
+| PUT    | `/api/reviews`            | 리뷰 수정       |
+| PUT    | `/api/members/{memberId}` | 프로필 수정      |
+| PUT    | `/api/admin/category`     | 카테고리 수정     |
+
+### DELETE API Endpoints
+
+| Method | URI                                | Description |
+|--------|------------------------------------|-------------|
+| DELETE | `/api/admin/category/{categoryId}` | 카테고리 삭제     |
+| DELETE | `/api/admin/users/{memberId}`      | 회원 강제 탈퇴    |
+| DELETE | `/api/reviews/{reviewId}`          | 리뷰 삭제       |
