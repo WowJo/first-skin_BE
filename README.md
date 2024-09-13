@@ -86,6 +86,9 @@
 ![Naver OpenAPI](https://img.shields.io/badge/Naver%20OpenAPI-03C75A?style=for-the-badge&logo=naver&logoColor=white)
 
 
+## 📊️ ERD
+<img width="527" alt="image" src="https://github.com/user-attachments/assets/eb076a84-605a-46fe-9529-d25ed6f67a77">
+
 ## 🛠 개발 환경
 
 ### 서버 (Server)
